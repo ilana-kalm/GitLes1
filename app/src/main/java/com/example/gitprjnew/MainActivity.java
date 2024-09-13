@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 
-public class MainActivity extends AppCompatActivity implements  CustomerView {
+public class MainActivity extends AppCompatActivity  {
         private EditText etName, etMail, etPhone;
         private Button btnPress;
         private CustomerPresenter presenter;
@@ -38,8 +38,5 @@ public class MainActivity extends AppCompatActivity implements  CustomerView {
         }
 
 
-        @Override
-        public void showCustomerDetails(Customer customer) {
-            Toast.makeText(this, "פרטי הלקוח נשלחו בהצלחה:\n" + customer.toString(), Toast.LENGTH_LONG).show();
-        }
+
     }
