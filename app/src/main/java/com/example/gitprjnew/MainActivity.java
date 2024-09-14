@@ -38,5 +38,7 @@ public class MainActivity extends AppCompatActivity  {
         }
 
 
-
-    }
+    public void showCustomerDetails(Customer customer) {
+        Toast.makeText(this, "פרטי הלקוח נשלחו בהצלחה:\n" + customer.toString(), Toast.LENGTH_LONG).show();
+        }
+}
